@@ -2,7 +2,6 @@
 using CodeBase.Infrastructures.Controller;
 using CodeBase.Infrastructures.StateMachines.Game;
 using CodeBase.Infrastructures.View;
-using CodeBase.Logic.Animation_UI;
 using CodeBase.Logic.Cell;
 using CodeBase.Logic.Field;
 using CodeBase.Services.Input_Game;
@@ -22,7 +21,6 @@ namespace CodeBase.Infrastructures.Installers
             BindStateMachineFactory();
             BindControllerFactory();
             BindInput();
-            BindAnimationUI();
             BindGameField();
             BindCellAnimation();
             BindCellSpawner();
@@ -89,15 +87,7 @@ namespace CodeBase.Infrastructures.Installers
 
             Container.BindInterfacesAndSelfTo<GameStateMachine>().AsSingle();
         }
-        
-        private void BindAnimationUI()
-        {
-            Container
-                .Bind<IAnimationUIService>()
-                .To<AnimationUIService>()
-                .AsSingle();
-        }
-        
+
         private void BindGameField()
         {
             Container
