@@ -90,7 +90,6 @@
               <e p="IPoolObject.cs" t="Include" />
               <e p="IPoolReturn.cs" t="Include" />
               <e p="PoolList.cs" t="Include" />
-              <e p="PoolQueue.cs" t="Include" />
               <e p="PoolView.cs" t="Include" />
             </e>
             <e p="TextView.cs" t="Include" />
